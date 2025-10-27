@@ -8,6 +8,7 @@ import PostLlist from "../pages/post/postlist/PostLlist";
 import PostWrite from "../pages/post/postwrite/PostWrite";
 import PostRead from "../pages/post/postread/PostRead";
 import PostUpdate from "../pages/post/postupdate/PostUpdate";
+import File from "../pages/file/File";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
           }
 
         ]
+      },
+      {
+        path: "file",
+        element: <File />
       }
     ]
   }

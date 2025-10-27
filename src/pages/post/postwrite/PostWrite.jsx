@@ -2,10 +2,13 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const PostWrite = () => {
+
   console.log(`${process.env.REACT_APP_BACKEND_URL}/posts/write`)
+
   const{
   register, handleSubmit, getValues, formState: {isSubmitting, isSubmitted, errors}
   } = useForm({mode: "onChange"})
+  
   const handleSumbitForm = handleSubmit(async (data) => {
   const{post} = data;
 
