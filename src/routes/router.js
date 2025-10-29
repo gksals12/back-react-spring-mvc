@@ -9,6 +9,7 @@ import PostWrite from "../pages/post/postwrite/PostWrite";
 import PostRead from "../pages/post/postread/PostRead";
 import PostUpdate from "../pages/post/postupdate/PostUpdate";
 import File from "../pages/file/File";
+import Oauth from "../pages/oauth/Oauth";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "file",
         element: <File />
+      },
+      {
+        path: "oauth2",
+        element: <Oauth />
       }
     ]
   }
